@@ -1,0 +1,120 @@
+/* paleta de cores
+#9246FF mais escuro
+#9B53FF
+#A86CFF
+#C8A4FB
+#D8BDFF mais claro
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body, html{
+    background-color: #9246FF;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+section#login {
+    background-color: white;
+    width: 250px;
+    height: 510px;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.404);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+div#imagem {
+    background-image: url(../imagens/fundo.jpg);
+    height: 200px;
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: block;
+}
+div > h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+div > p {
+    font-size: 0.9em;
+}
+div#formulario{
+    margin: auto;
+    display: block;
+    text-align: justify;
+   padding: 10px;
+}
+.entrar{
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #A86CFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.entrar:hover{
+    background-color: #8532f8;
+}
+.botao{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border: 1px solid #9654f8;
+    border-radius: 7px;
+    text-decoration: none;
+    padding-top: 5px;
+    margin-top: 5px;
+}
+.botao:hover{
+    background-color:#9c5ff1;
+}
+.campo{
+    background-color: #532a8b;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+label{
+    display: none;
+}
+div.campo > input{
+    background-color: #A86CFF;
+    font-size: 1em;
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    width: calc(100% - 45px);
+    transform: translateY(-12px);
+}
+div.campo > input:focus-within{
+    background-color: white;
+}
+.campo > span {
+    color: white;
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
